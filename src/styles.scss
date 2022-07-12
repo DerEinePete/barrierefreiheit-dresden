@@ -1,0 +1,59 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('./../node_modules/css.gg/icons/all.css');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap');
+@import url('./../node_modules/leaflet/dist/leaflet.css');
+
+body, html {
+    height: 100vh;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Baloo 2', cursive;
+    background: #f2f2f2;
+}
+
+button.button {
+    border-radius: 5px;
+    background: linear-gradient(225deg, #dadada, #ffffff);
+    box-shadow: -10px 10px 20px #c9c9c9,
+        10px -10px 20px #ffffff;
+    color: black;
+    padding: 15px;
+    border: 0px;
+    cursor: pointer;
+}
+
+button.button.clicked {
+    border-radius: 5px;
+    background: #e0e0e0;
+    box-shadow: inset 10px 10px 20px #bebebe,
+        inset -10px -10px 20px #ffffff;
+}
+
+button.button.icon {
+    border-radius: 100%;
+    padding: 0px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    position: relative;
+}
+
+button.button.icon i {
+    font-size: 20px;
+    margin: 15px;
+    position: absolute;
+}
+
+button.button.warn:hover {
+    background: linear-gradient(145deg, #e66060, #ff7272);
+    box-shadow: -10px 10px 20px #c9c9c9,
+        10px -10px 20px #ffffff;
+}
+
+h1,
+h2,
+h3 {
+    margin: auto;
+}

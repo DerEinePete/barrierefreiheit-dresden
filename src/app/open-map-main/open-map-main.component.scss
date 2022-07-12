@@ -1,0 +1,60 @@
+.main {
+
+    margin: 0px 50px;
+    display: grid;
+    grid-auto-rows: auto 1fr;
+    position: relative;
+    height: 100%;
+
+    div {
+        margin: 20px;
+    }
+
+    .title {
+        display: flex;
+        min-width: min-content;
+        gap: 20px;
+        padding: 20px;
+        flex-direction: row;
+        align-items: center;
+        border-radius: 5px;
+        background: #f2f2f2;
+        box-shadow: -2px 2px 4px #c9c9c9,
+            2px -2px 4px #ffffff;
+
+        .loader {
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #3498db;
+            border-radius: 50%;
+            ;
+            animation: spin 2s linear infinite;
+            padding: 20px;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    }
+
+    .list {
+        min-width: min-content;
+        padding: 20px;
+        border-radius: 5px;
+        background: #f2f2f2;
+        box-shadow: -2px 2px 4px #c9c9c9, 2px -2px 4px #ffffff;
+
+        .map {
+            height: 100%;
+            width: 100%;
+            margin: 0px;
+        }
+    }
+
+
+}
