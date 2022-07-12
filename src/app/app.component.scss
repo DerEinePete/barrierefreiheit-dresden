@@ -1,6 +1,11 @@
 .content {
     display: grid;
     grid-template-rows: min-content 1fr;
-    gap:20px;
+    gap: 20px;
     height: 100vh;
+
+
+    @media (max-width: 768px) {
+        gap: 0px;
+    }
 }
